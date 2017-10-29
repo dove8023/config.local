@@ -12,6 +12,17 @@
     "config.local",
     "local.config"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dove8023/config.local.git"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
   "author": "dove8023",
-  "license": "ISC"
+  "license": "MIT",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1"
+  }
 }
