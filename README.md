@@ -1,7 +1,7 @@
 # config.local
 ## install
 ```javascript
-	npm install --save config.local
+npm install --save config.local
 ```
 ## description
 In different enviornments, projects need different config setting.
@@ -11,47 +11,50 @@ For example, the database on the production config setting is different with the
 
 ### how to use
 ```javascript
-	let config = require("config.local");
-	console.log(config);
+let config = require("config.local");
+console.log(config);
 ```
 
-###file structure
+### file structure
                 
 * **config** folder on the root director.
 * **config.json** file in the config folder.
 * **config.local.json** file in the config folder.
 
-###eg:
-####config.json
+### eg:
+#### config.json
 ```json
-    {
-        "name":"Simth",
-        "work":{
-            "city":"Beijing",
-            "company":"IT"
-        }
+{
+    "name":"Simth",
+    "work":{
+        "city":"Beijing",
+        "company":"IT",
+        "hisname":"{{name}}"
     }
+}
 ```
-####config.local.json
+#### config.local.json
 ```json
-    {
-        "name":"Amy",
-        "work":{
-            "city":"NewYork"
-        }
-    }
+{
+    "name":"Amy",
+    "work":{
+        "city":"NewYork",
+    },
+    "sex":"man"
+}
 ```
-####using the project.
+#### using the project.
 ```javascript
-    let config = require("config.local");
-    console.log(config);
-    /* 
-    {
-        "name":"Amy",
-        "work":{
-            "city":"NewYork",
-            "company":"IT"
-        }
+let config = require("config.local");
+console.log(config);
+/* 
+{
+    "name":"Amy",
+    "work":{
+        "city":"NewYork",
+        "company":"IT",
+        "hisname":"Amy"
     }
-    */
+}
+*/
 ```
