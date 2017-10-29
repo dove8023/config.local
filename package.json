@@ -1,0 +1,17 @@
+{
+  "name": "config.local",
+  "version": "1.0.0",
+  "description": "using set local config.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "local",
+    "config",
+    "config.local",
+    "local.config"
+  ],
+  "author": "dove8023",
+  "license": "ISC"
+}
