@@ -43,7 +43,7 @@ console.log(config);
     "sex":"man"
 }
 ```
-#### using the project.
+#### using in the project.
 ```javascript
 let config = require("config.local");
 console.log(config);
